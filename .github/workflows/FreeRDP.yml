@@ -12,15 +12,15 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra-new/FreeRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra-new/FreeRDP/main/wallpaper.png -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra-new/FreeRDP/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra-new/FreeRDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/PKV098007/RDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/PKV098007/RDP/main/wallpaper.png -OutFile wallpaper.bmp
+        Invoke-WebRequest https://raw.githubusercontent.com/PKV098007/RDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/PKV098007/RDP/main/loop.bat -OutFile loop.bat
     - name: Download the Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra-new/FreeRDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra-new/FreeRDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/EmanSaputra-new/FreeRDP/raw/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/PKV098007/RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/PKV098007/RDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/PKV098007/RDP/blob/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
     - name: Extracting the Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Ngrok Account.
