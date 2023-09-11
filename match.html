@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+
+    <title>Star Sports Hindi by PKV</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        body {
+            margin: 0px
+        } 
+        
+        #jwplayerDiv {
+            
+            position: absolute !important;
+            min-height: 100%;
+            max-height: 100%;
+            /* overflow: hidden; */
+        }
+    </style>
+
+</head>
+
+<body>
+    
+
+    <script disable-devtool-auto='true' src='https://cdn.jsdelivr.net/npm/disable-devtool' clear-log='true'
+        disable-select='true' disable-copy='true' disable-cut='true' disable-paste='true'></script>
+
+    <script src="https://content.jwplatform.com/libraries/IDzF9Zmk.js"></script>
+
+    <script>
+        jwplayer.defaults = jwDefaults;
+    </script>
+
+    <!-- Made BY PKV -->
+
+    <div id="jwplayerDiv"></div>
+
+    <script type="text/javascript">
+
+        jwplayer("jwplayerDiv").setup({
+            "autostart": true,
+            "preload": "none",
+            "repeat": true,
+            "Volume": "100",
+            "mute": false,
+            "stretching": "exactfit",
+            "width": "100%",
+            "setPip": false,
+            "cast": {},
+            "type": "hls",
+            file: "https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_252/output/manifest.mpd",
+            type: "dash",
+            drm: {
+                "clearkey": {
+
+                    "keyId": "6a9e4204f3f8577ebf6e79b3b18573f8",
+                    "key": "a5f09bc31dbac3438c60745535aa843e",
+                }
+
+            }
+
+        });  
+    </script>
+</body>
+
+</html>
